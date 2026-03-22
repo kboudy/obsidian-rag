@@ -1,3 +1,15 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## Commands
+
+- `bun install` — install dependencies
+- `bun run index.ts` — run the app
+- `bun test` — run all tests
+- `bun test <file>` — run a single test file
+
+## Bun over Node.js
 
 Default to using Bun instead of Node.js.
 
@@ -104,3 +116,7 @@ bun --hot ./index.ts
 ```
 
 For more information, read the Bun API docs in `node_modules/bun-types/docs/**.mdx`.
+
+## TypeScript
+
+Strict mode is enabled with `noUncheckedIndexedAccess: true` — array/object index access returns `T | undefined`, so handle the undefined case.
