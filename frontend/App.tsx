@@ -1,9 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-
-function App() {
-  return <div style={{ padding: "2rem" }}><h1>Obsidian RAG — coming soon</h1></div>;
-}
+import { SearchView } from "./SearchView.tsx";
+import "./styles.css";
 
 const root = createRoot(document.getElementById("root")!);
-root.render(<App />);
+root.render(<SearchView />);
